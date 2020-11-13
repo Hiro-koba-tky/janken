@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript/jQuery1回目</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<div class="game-area">
+  <div id="result">
+<!-- じゃんけんの結果を表示 -->
+      <p><div class="result_box"></div></p>      
+ <!-- プレイヤーの出した手を表示 -->
+      自分:<span class="result_player"></span>
+      <p>vs</p>
+<!-- CPUの出した手を表示 -->
+      相手:<span class="result_cpu"></span>
+  </div>
+  <p> <div class="game-control"><!-- プレイヤーの選択するボタンを表示 --></div>
+</div></p>
+
+
+<!--
+<body>
+  <h3>じゃんけん</h3>
+  <hr>
+  <table border="0" align="center">
+  <tr>
+  <th><div id="ahand"></div></th>
+  <th>VS</th>
+  <th><div id="bhand"></div></th>
+  </tr>
+  <tr>
+  <th>相手</th>
+  <td>&nbsp;</td>
+  <th>自分</th>
+  </tr>
+  <tr>
+  <th colspan="3">&nbsp;</th>
+  </tr>
+  <tr>
+  <th colspan="3"><form name="janken">
+  <table border="0" align="center">
+  <tr>
+  <td colspan="3">じゃんけんぽん！</td>
+  </tr>
+  <tr>
+  <th><input type="button" onClick="getbhand(0)" value="グー"></th>
+  <th><input type="button" onClick="getbhand(1)" value="チョキ"></th>
+  <th><input type="button" onClick="getbhand(2)" value="パー"></th>
+  </tr>
+  </table>
+  </form></th>
+  </tr>
+  </table>
+  
+  <script type="text/javascript">
+    hand = new Array("gu.jpg","choki.jpg","pa.jpg");
+    
+    function getbhand(btn) {
+      //手を出す
+      r = Math.floor(Math.random() * 3);
+      document.getElementById("ahand").innerHTML = "<img src='" + hand[r] + "'>";
+      document.getElementById("bhand").innerHTML = "<img src='" + hand[btn] + "'>";
+    }
+    </script>
+  
+-->
+
+    <!-- jqueryのコードが貼り付けてあります -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/test.js"></script>
+</body>
+
+</html>
